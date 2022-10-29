@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+   <nav class="navbar">
+        <h1 class="logo">AJALA TRAVEL <i class="fa-solid fa-plane-departure"></i></h1>
+        <ul class="nav-links">
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="">Tours</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <img src="menu.png" alt="" class="menu-btn"> 
+
+   </nav>
+   
+   <header>
+        <div class="header-content">
+            <h2>EXPLORE THE WORLD</h2>
+            <div class="line"></div>
+            <h1>ENJOY ALL ROUND TOUR</h1>
+            <a href="#" class="btn"><button>Learn More</button></a>
+        </div>
+   </header>
+
+<section>
+    <div class="title">
+        <h3>Upcoming Tours</h3>
+        <!-- <div class="line"></div> -->
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="dubai.jpg" alt="">
+            <h4>Dubia Hangout</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing assumenda dignissimos expedita totam in qui facere! Beatae ratione id, consequatur libero?</p>
+            <a href="#" class="btn"><button>Learn More</button></a>
+        </div>
+        <div class="col">
+            <img src="maldives.jpg" alt="">
+            <h4>Summer in Egypt</h4>
+            <p>Lorem ipsum dolor sit amet adipisicing elit. Blanditiis in vel voluptate ipsa eos ut, incidunt, maxime repellat aut deleniti? Maxime, distinctio.</p>
+            <a href="#" class="btn"><button>Learn More</button></a>
+        </div>
+    </div>  
+    
+</section>
+
+<section class="explore">
+    <div class="explore-content">
+        <h1>EXPLORE AROUND THE WORLD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fugiat ipsam. Blanditiis in vel voluptate ipsa eos ut, incidunt, eius soluta doloribus maxime repellat aut deleniti? Maxime, distinctio.</p>
+        <a href="#" class="btn"><button>Learn More</button></a>
+    </div>
+</section>
+
+<section class="tours"> 
+    <div class="row">
+        <div class="col content-col">
+            <h1>UPCOMING TOURS & HANGOUT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis nostrum rerum accusantium adipisci minima quasi in earum fugit ea? Commodi rerum iste expedita suscipit soluta autem sit!</p>
+            <a href="#" class="btn"><button>Learn More</button></a>
+        </div>
+        <div class="col image-col">
+            <div class="images">
+                <img src="dubai.jpg" alt="">
+                <img src="egypt.jpg" alt="">
+                <img src="zanzibar.jpg" alt="">
+                <img src="maldives.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-section">
+        <p>436 Victoria Avenue, LA 1208, Lagos, Nigeria | Phone: 01-200000 | ajalatravel@gmail.com</p>
+        <p>Copyright &copy; 2022 tour</p>
+    </div>
+</footer>
+
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',() => {
+    navlinks.classList.toggle('mobile-menu')
+    })
+</script>
+<!-- <script>
+    make sure you use ID in the html section if you want this to work
+    var menuBtn = document.getElementById("menu-btn");
+    var navLinks = document.getElementById("nav-links");
+
+    navLinks.style.right = "-300px";
+    menuBtn.onclick = function(){
+        if(navLinks.style.right == "-300px"){
+            navLinks.style.right = "0";
+        }
+        else{
+            navLinks.style.right = "-300px";
+        }  }
+</script> -->
+</body>
+</html>

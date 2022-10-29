@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.logo{
+    color: white;
+    font-size: 4vmin;
+    font-family: cursive; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-links li{
+    padding: 18px;
+}
+
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.menu-btn{
+    position: absolute;
+    top:30px ;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(110,10,0,0.3), rgba(0,0,200,0.1)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    margin: 10px auto;
+    background-color:orangered;
+}
+.header-content h1{
+    font-size: 7vmin;
+}
+button{
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: orangered;
+}
+.col img{
+    width: 550px;
+    height: 550px;
+    padding: 30px;
+    border-top-right-radius: 100px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .events .row{
+    margin-top:50px;
+} */
+h4{
+    font-size: 3vmin;
+    color: orangered;
+    margin: 20px auto; 
+}
+p{
+    font-size: 2.5vmin;
+    padding: 0px 22px;
+}
+
+.explore{
+    width: 100%;
+    height: 70vh;
+    background-image: url('travellers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+}
+.explore-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.explore-content h1{
+    color: white;
+    font-size: 7vmin;
+}
+.explore-content p{
+    color: white;
+}
+.explore-content button{
+    margin-top: 30px;
+}
+.content-col{
+    width: 40%;
+}
+.image-col{
+    width: 60%; 
+}
+.tours .images{
+    display: flex; 
+    flex-wrap: wrap; 
+    /* flex-direction: row;   */
+    width: 100%;
+    align-items: center;
+}
+.images img{
+    max-width: 250px;
+    height: 300px;
+    border-top-right-radius: 100px;
+}
+.content-col h1{
+    color: orangered;
+    font-size: 5.5vmin;
+}
+.content-col p{
+    font-size: 2.7vmin;
+    padding: 3px;
+}
+.footer-section{
+    background-color: orangered;
+    color: whitesmoke;
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+}
+.footer-section p{
+    padding: 5px;
+}
+/* media query */
+@media only screen and (max-width:768px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(226, 91, 42);
+        margin-top: -900px; 
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        transition: all 0.5s ease;
+       /* 
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: -300px;  use this if you want the nav bar to pop from the right side of the screen*/
+    }
+    .mobile-menu{
+        margin-top: 0;
+        /* change this to right 0 if you want the nav bar to pop by the right */
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 15px auto;
+    }
+    .col img{
+        padding: 5px ;
+        max-width: 100%;
+    }
+     /* explore section */
+    .tours .col{
+        width: 100%;
+    }
+    .images img{ 
+        width: 80%;
+    }
+    .images{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
