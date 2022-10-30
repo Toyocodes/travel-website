@@ -28,6 +28,7 @@ a{
     display: flex;
     align-items: center;
     list-style: none;
+    font-size: 2rem;
 }
 .nav-links li{
     padding: 18px;
